@@ -29,7 +29,9 @@ public class Bird : MonoBehaviour
     {
         if (isClick)
         {
-            var temp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            var mousePosition = Input.mousePosition;
+            var tempMousePosition = new Vector3(mousePosition.x, mousePosition.y, -10);
+            var temp = Camera.main.ScreenToWorldPoint(tempMousePosition);
             temp = new Vector3(temp.x, temp.y, 0);
             transform.position = temp;
             if (Vector3.Distance(transform.position, ori.position) > maxDis)
