@@ -34,7 +34,7 @@ public class Bird3D : MonoBehaviour
             if (Physics.Raycast(ray, out hit))
             {
                 if (hit.rigidbody.name == "redbird") {
-                    transform.position = new Vector3(hit.point.x, hit.point.y, 8);
+                    transform.position = new Vector3(hit.point.x, hit.point.y, ori.position.z);
                 }
             }
         }
