@@ -7,10 +7,14 @@ public class GameManager : MonoBehaviour
     public List<Bird3D> birds;
     public List<pig> pigs;
     public static GameManager _instance;
+    private Vector3 originPos;//初始化的位置
+    public GameObject Lose;
+    public GameObject Win;
 
     private void Awake()
     {
         _instance = this;
+        originPos = birds[0].transform.position;
     }
     /// <summary>
     /// 初始化
@@ -21,6 +25,7 @@ public class GameManager : MonoBehaviour
         {
             if (i == 0)
             {
+                birds[i].transform.position = originPos;
                 birds[i].sp.spring = 6;
             }
             else
@@ -42,11 +47,13 @@ public class GameManager : MonoBehaviour
             else
             {
                 //输了
+                Lose.SetActive(true);
             }
         }
         else
         {
             //赢了
+            Win.SetActive(true);
         }
     }
 }
