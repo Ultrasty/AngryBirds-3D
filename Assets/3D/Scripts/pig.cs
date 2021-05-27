@@ -22,9 +22,11 @@ public class pig : MonoBehaviour
     }
     void Dead()
     {
+        GameManager._instance.pigs.Remove(this);
         Destroy(gameObject);
-        var tempPos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        var tempPos = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
         Instantiate(boom, transform.position, Quaternion.identity);
         GameObject go = Instantiate(score, tempPos, Quaternion.identity);
+        Destroy(go, 1.5f);
     }
 }

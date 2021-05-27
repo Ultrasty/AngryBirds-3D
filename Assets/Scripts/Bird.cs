@@ -7,7 +7,8 @@ public class Bird : MonoBehaviour
     public float maxDis;
     public Transform ori;
     private bool isClick = false;
-    private SpringJoint2D sp;
+    [HideInInspector]
+    public SpringJoint2D sp;
     private Rigidbody2D rg;
     private void Awake()
     {
