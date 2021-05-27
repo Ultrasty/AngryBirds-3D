@@ -10,7 +10,7 @@ public class pig : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(transform.position);
+        //Debug.Log(transform.position);
     }
 
     private void OnCollisionEnter(Collision collision)
