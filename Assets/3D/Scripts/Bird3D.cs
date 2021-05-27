@@ -13,6 +13,9 @@ public class Bird3D : MonoBehaviour
     [HideInInspector]
     public SpringJoint sp;
     public GameObject boom;
+
+    public AudioClip select;
+    public AudioClip flyaudio;
     private void Awake()
     {
         sp = GetComponent<SpringJoint>();
@@ -51,6 +54,7 @@ public class Bird3D : MonoBehaviour
 
     private void OnMouseDown()
     {
+        AudioPlay(select);
         isClick = true;
         rg.isKinematic = true;
     }
@@ -64,6 +68,7 @@ public class Bird3D : MonoBehaviour
 
     private void fly()
     {
+        AudioPlay(flyaudio);
         sp.spring = 0;
         Invoke("Next", 5);
     }
@@ -77,5 +82,10 @@ public class Bird3D : MonoBehaviour
         Destroy(gameObject);
         Instantiate(boom, transform.position, Quaternion.identity);
         GameManager._instance.NextBird();
+    }
+
+    public void AudioPlay(AudioClip clip)
+    {
+        AudioSource.PlayClipAtPoint(clip, transform.position);
     }
 }

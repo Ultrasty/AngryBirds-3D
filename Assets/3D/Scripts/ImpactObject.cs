@@ -6,6 +6,7 @@ public class ImpactObject : MonoBehaviour
 {
     public float maxSpeed;
     public GameObject boom;
+    public AudioClip impacted;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -16,7 +17,13 @@ public class ImpactObject : MonoBehaviour
     }
     void disappear()
     {
+        AudioPlay(impacted);
         Destroy(gameObject);
         Instantiate(boom, transform.position, Quaternion.identity);
+    }
+
+    public void AudioPlay(AudioClip clip)
+    {
+        AudioSource.PlayClipAtPoint(clip, transform.position);
     }
 }

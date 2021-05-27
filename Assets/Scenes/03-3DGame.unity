@@ -7351,6 +7351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 7
   boom: {fileID: 8805062406024151338, guid: d371264aa6ec9d549a0ca6e510abb3b6, type: 3}
+  impacted: {fileID: 8300000, guid: 53dea70923c95cb45864ff65eeb38785, type: 3}
 --- !u!1001 &316648616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8271,6 +8272,8 @@ MonoBehaviour:
   ori: {fileID: 611859037}
   sp: {fileID: 0}
   boom: {fileID: 8805062406024151338, guid: d371264aa6ec9d549a0ca6e510abb3b6, type: 3}
+  select: {fileID: 8300000, guid: 32b5cb2ec3029484eb0a71e43bd697e0, type: 3}
+  flyaudio: {fileID: 8300000, guid: 65774e057815a5e4fa70215e9acad616, type: 3}
 --- !u!65 &356890526
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9330,6 +9333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 7
   boom: {fileID: 8805062406024151338, guid: d371264aa6ec9d549a0ca6e510abb3b6, type: 3}
+  impacted: {fileID: 8300000, guid: 53dea70923c95cb45864ff65eeb38785, type: 3}
 --- !u!1001 &410299605
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13857,6 +13861,8 @@ MonoBehaviour:
   ori: {fileID: 611859037}
   sp: {fileID: 0}
   boom: {fileID: 8805062406024151338, guid: d371264aa6ec9d549a0ca6e510abb3b6, type: 3}
+  select: {fileID: 8300000, guid: 32b5cb2ec3029484eb0a71e43bd697e0, type: 3}
+  flyaudio: {fileID: 8300000, guid: 65774e057815a5e4fa70215e9acad616, type: 3}
 --- !u!145 &599691824
 SpringJoint:
   m_ObjectHideFlags: 0
@@ -15812,6 +15818,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 7
   boom: {fileID: 8805062406024151338, guid: d371264aa6ec9d549a0ca6e510abb3b6, type: 3}
+  impacted: {fileID: 8300000, guid: 53dea70923c95cb45864ff65eeb38785, type: 3}
 --- !u!4 &699664965 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4154483444672150, guid: 9cbe114ded05b77408703dd681924e79,
@@ -17672,6 +17679,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 7
   boom: {fileID: 8805062406024151338, guid: d371264aa6ec9d549a0ca6e510abb3b6, type: 3}
+  impacted: {fileID: 8300000, guid: 53dea70923c95cb45864ff65eeb38785, type: 3}
 --- !u!1001 &783513878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26893,6 +26901,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 7
   boom: {fileID: 8805062406024151338, guid: d371264aa6ec9d549a0ca6e510abb3b6, type: 3}
+  impacted: {fileID: 8300000, guid: 53dea70923c95cb45864ff65eeb38785, type: 3}
 --- !u!4 &1243271688 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 16a6d96f073f0f941b9ce55635b4ffb6,
@@ -27131,6 +27140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 7
   boom: {fileID: 8805062406024151338, guid: d371264aa6ec9d549a0ca6e510abb3b6, type: 3}
+  impacted: {fileID: 8300000, guid: 53dea70923c95cb45864ff65eeb38785, type: 3}
 --- !u!4 &1261550869 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4913042138468634, guid: c0398b97943a5fd4f8bc102a121965b5,
@@ -31360,6 +31370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 7
   boom: {fileID: 8805062406024151338, guid: d371264aa6ec9d549a0ca6e510abb3b6, type: 3}
+  impacted: {fileID: 8300000, guid: 53dea70923c95cb45864ff65eeb38785, type: 3}
 --- !u!1001 &1441442359
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33800,6 +33811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 7
   boom: {fileID: 8805062406024151338, guid: d371264aa6ec9d549a0ca6e510abb3b6, type: 3}
+  impacted: {fileID: 8300000, guid: 53dea70923c95cb45864ff65eeb38785, type: 3}
 --- !u!1 &1545412441 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1879198666126068, guid: 8f7c1c3559fb0e845bf76101dd60df17,
@@ -35434,6 +35446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 7
   boom: {fileID: 8805062406024151338, guid: d371264aa6ec9d549a0ca6e510abb3b6, type: 3}
+  impacted: {fileID: 8300000, guid: 53dea70923c95cb45864ff65eeb38785, type: 3}
 --- !u!1001 &1629299351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39127,6 +39140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 7
   boom: {fileID: 8805062406024151338, guid: d371264aa6ec9d549a0ca6e510abb3b6, type: 3}
+  impacted: {fileID: 8300000, guid: 53dea70923c95cb45864ff65eeb38785, type: 3}
 --- !u!1001 &1815104137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43974,6 +43988,8 @@ MonoBehaviour:
   ori: {fileID: 611859037}
   sp: {fileID: 0}
   boom: {fileID: 8805062406024151338, guid: d371264aa6ec9d549a0ca6e510abb3b6, type: 3}
+  select: {fileID: 8300000, guid: 32b5cb2ec3029484eb0a71e43bd697e0, type: 3}
+  flyaudio: {fileID: 8300000, guid: 65774e057815a5e4fa70215e9acad616, type: 3}
 --- !u!145 &2010226407
 SpringJoint:
   m_ObjectHideFlags: 0
@@ -45565,6 +45581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 7
   boom: {fileID: 8805062406024151338, guid: d371264aa6ec9d549a0ca6e510abb3b6, type: 3}
+  impacted: {fileID: 8300000, guid: 53dea70923c95cb45864ff65eeb38785, type: 3}
 --- !u!4 &2080445794 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4913042138468634, guid: c0398b97943a5fd4f8bc102a121965b5,
@@ -47526,6 +47543,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: barrel
       objectReference: {fileID: 0}
+    - target: {fileID: 3488652595977489801, guid: e95696c098ec63541b9c39530e1a94ce,
+        type: 3}
+      propertyPath: impacted
+      value: 
+      objectReference: {fileID: 8300000, guid: 53dea70923c95cb45864ff65eeb38785, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e95696c098ec63541b9c39530e1a94ce, type: 3}
 --- !u!1001 &6485841935107372979
@@ -47540,6 +47562,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: box
       objectReference: {fileID: 0}
+    - target: {fileID: 6485841933475996922, guid: 8fc40179969f82143a5c020e831ac64a,
+        type: 3}
+      propertyPath: impacted
+      value: 
+      objectReference: {fileID: 8300000, guid: 53dea70923c95cb45864ff65eeb38785, type: 3}
     - target: {fileID: 6488670140950097904, guid: 8fc40179969f82143a5c020e831ac64a,
         type: 3}
       propertyPath: m_RootOrder
