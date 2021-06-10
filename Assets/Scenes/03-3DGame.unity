@@ -18884,6 +18884,8 @@ MonoBehaviour:
   - {fileID: 1262053151}
   - {fileID: 854151159}
   - {fileID: 1086335052}
+  win: {fileID: 8300000, guid: 25b0c458876092f4dbbb936862e79e01, type: 3}
+  lose: {fileID: 8300000, guid: ae77171531b22174f8e8d275ebba31e9, type: 3}
 --- !u!4 &837696237
 Transform:
   m_ObjectHideFlags: 0

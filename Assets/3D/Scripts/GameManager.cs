@@ -11,11 +11,33 @@ public class GameManager : MonoBehaviour
     public GameObject Lose;
     public GameObject Win;
     public GameObject[] stars;
+    public AudioClip win;
+    public AudioClip lose;
+
+    void OnGUI()
+    {
+
+        GUI.Box(new Rect(10, 10, 100, 90), "Debug Menu");
+
+        if (GUI.Button(new Rect(20, 40, 80, 20), "win"))
+        {
+            Win.SetActive(true);
+            AudioPlay(win);
+            showstars();
+        }
+
+        if (GUI.Button(new Rect(20, 70, 80, 20), "lose"))
+        {
+            Lose.SetActive(true);
+            AudioPlay(lose);
+        }
+    }
 
     private void Awake()
     {
         _instance = this;
         originPos = birds[0].transform.position;
+        
     }
     /// <summary>
     /// 初始化
@@ -49,12 +71,14 @@ public class GameManager : MonoBehaviour
             {
                 //输了
                 Lose.SetActive(true);
+                AudioPlay(lose);
             }
         }
         else
         {
             //赢了
             Win.SetActive(true);
+            AudioPlay(win);
             showstars();
         }
     }
@@ -68,8 +92,13 @@ public class GameManager : MonoBehaviour
     {
         for(int i = 0; i < 3; i++)
         {
-            yield return new WaitForSeconds(0.8f);
+            yield return new WaitForSeconds(0.4f);
             stars[i].SetActive(true);
         }
+    }
+
+    public void AudioPlay(AudioClip clip)
+    {
+        AudioSource.PlayClipAtPoint(clip, transform.position);
     }
 }
