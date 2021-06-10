@@ -13,6 +13,7 @@ public class Bird3D : MonoBehaviour
     [HideInInspector]
     public SpringJoint sp;
     public GameObject boom;
+    public float smooth = 3;
 
     public AudioClip select;
     public AudioClip flyaudio;
@@ -50,6 +51,11 @@ public class Bird3D : MonoBehaviour
                 transform.position = pos + ori.position;
             }
         }
+
+        float posX = transform.position.x;
+        Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, 
+            new Vector3(Mathf.Clamp(posX, 6.54f, 26.6f), Camera.main.transform.position.y, 
+            Camera.main.transform.position.z),smooth*Time.deltaTime);
     }
 
     private void OnMouseDown()
