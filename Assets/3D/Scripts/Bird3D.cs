@@ -25,6 +25,7 @@ public class Bird3D : MonoBehaviour
     void Start()
     {
         
+
     }
     void FixedUpdate()
     {
@@ -55,7 +56,7 @@ public class Bird3D : MonoBehaviour
         float posX = transform.position.x;
         Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, 
             new Vector3(Mathf.Clamp(posX, 6.54f, 26.6f), Camera.main.transform.position.y, 
-            Camera.main.transform.position.z),smooth*Time.deltaTime);
+            Camera.main.transform.position.z), smooth*Time.deltaTime);
     }
 
     private void OnMouseDown()

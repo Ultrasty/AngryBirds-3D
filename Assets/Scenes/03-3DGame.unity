@@ -785,7 +785,7 @@ Transform:
   m_LocalScale: {x: 240.00006, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 500393254}
-  m_RootOrder: 652
+  m_RootOrder: 139
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &22077472
 BoxCollider:
@@ -11500,10 +11500,10 @@ Transform:
   - {fileID: 1503723883}
   - {fileID: 1417346988}
   - {fileID: 618035286}
+  - {fileID: 1486115416}
   - {fileID: 376605656}
   - {fileID: 1734836357}
   - {fileID: 1856325676}
-  - {fileID: 1486115416}
   - {fileID: 567054835}
   - {fileID: 971565335}
   - {fileID: 82254038}
@@ -11544,6 +11544,7 @@ Transform:
   - {fileID: 1660028982}
   - {fileID: 1862367964}
   - {fileID: 1174408397}
+  - {fileID: 22077471}
   - {fileID: 848124174}
   - {fileID: 331689332}
   - {fileID: 1225822122}
@@ -12057,7 +12058,6 @@ Transform:
   - {fileID: 1361788325}
   - {fileID: 1240291477}
   - {fileID: 1924514541}
-  - {fileID: 22077471}
   - {fileID: 580428314}
   - {fileID: 1235565493}
   - {fileID: 1793270905}
@@ -24067,7 +24067,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1115726731}
   - component: {fileID: 1115726730}
-  - component: {fileID: 1115726729}
   m_Layer: 0
   m_Name: UICamera
   m_TagString: Untagged
@@ -24075,14 +24074,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1115726729
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115726728}
-  m_Enabled: 1
 --- !u!20 &1115726730
 Camera:
   m_ObjectHideFlags: 0
@@ -31939,7 +31930,7 @@ Transform:
   m_LocalScale: {x: 210, y: 1, z: 250}
   m_Children: []
   m_Father: {fileID: 500393254}
-  m_RootOrder: 98
+  m_RootOrder: 95
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1486115417
 BoxCollider:
@@ -37655,7 +37646,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733711579}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.26, y: 6.2, z: -18.55}
+  m_LocalPosition: {x: 6.54, y: 6.2, z: -18.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
