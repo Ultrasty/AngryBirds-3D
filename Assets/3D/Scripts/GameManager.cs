@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     private Vector3 originPos;//初始化的位置
     public GameObject Lose;
     public GameObject Win;
+    public GameObject[] stars;
 
     private void Awake()
     {
@@ -54,6 +55,21 @@ public class GameManager : MonoBehaviour
         {
             //赢了
             Win.SetActive(true);
+            showstars();
+        }
+    }
+
+    public void showstars()
+    {
+        StartCoroutine("show");
+    }
+
+    IEnumerator show()
+    {
+        for(int i = 0; i < 3; i++)
+        {
+            yield return new WaitForSeconds(0.8f);
+            stars[i].SetActive(true);
         }
     }
 }

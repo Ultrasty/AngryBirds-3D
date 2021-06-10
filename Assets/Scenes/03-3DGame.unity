@@ -18880,6 +18880,10 @@ MonoBehaviour:
   - {fileID: 401160596}
   Lose: {fileID: 651449578}
   Win: {fileID: 1230299950}
+  stars:
+  - {fileID: 1262053151}
+  - {fileID: 854151159}
+  - {fileID: 1086335052}
 --- !u!4 &837696237
 Transform:
   m_ObjectHideFlags: 0
@@ -19045,7 +19049,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &854151160
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23435,7 +23439,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1086335053
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27185,7 +27189,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1262053152
 RectTransform:
   m_ObjectHideFlags: 0
