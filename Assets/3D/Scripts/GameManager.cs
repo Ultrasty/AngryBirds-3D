@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
             if (i == 0)
             {
                 birds[i].transform.position = originPos;
-                birds[i].sp.spring = 6;
+                birds[i].sp.spring = 4;
             }
             else
             {
