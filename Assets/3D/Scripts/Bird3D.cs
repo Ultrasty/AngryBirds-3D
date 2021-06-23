@@ -84,11 +84,11 @@ public class Bird3D : MonoBehaviour
     /// </summary>
     void Next()
     {
-
-        GameManager._instance.birds.Remove(this);
+        var instance = GameObject.Find("GameManager").GetComponent<GameManager>();
+        instance.birds.Remove(this);
         Destroy(gameObject);
         Instantiate(boom, transform.position, Quaternion.identity);
-        GameManager._instance.NextBird();
+        instance.NextBird();
     }
 
     public void AudioPlay(AudioClip clip)

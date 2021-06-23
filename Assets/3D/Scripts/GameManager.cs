@@ -6,7 +6,6 @@ public class GameManager : MonoBehaviour
 {
     public List<Bird3D> birds;
     public List<pig> pigs;
-    public static GameManager _instance;
     private Vector3 originPos;//初始化的位置
     public GameObject Lose;
     public GameObject Win;
@@ -35,7 +34,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        _instance = this;
+
         originPos = birds[0].transform.position;
         
     }

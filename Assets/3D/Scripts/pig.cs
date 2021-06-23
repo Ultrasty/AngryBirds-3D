@@ -22,7 +22,8 @@ public class pig : MonoBehaviour
     }
     void Dead()
     {
-        GameManager._instance.pigs.Remove(this);
+        var instance = GameObject.Find("GameManager").GetComponent<GameManager>();
+        instance.pigs.Remove(this);
         Destroy(gameObject);
         var tempPos = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
         Instantiate(boom, transform.position, Quaternion.identity);
